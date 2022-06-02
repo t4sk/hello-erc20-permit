@@ -3,6 +3,9 @@
 ```shell
 npm i
 
-# Test VerifySignature.sol
+# Test signature verification
 npx hardhat test test/verify-signature.js
+
+# Test ERC20 Permit
+npx hardhat test test/erc20-permit.js
 ```
