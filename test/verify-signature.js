@@ -9,6 +9,8 @@ describe("VerifySignature", function () {
     const contract = await VerifySignature.deploy()
     await contract.deployed()
 
+    // const PRIV_KEY = "0x..."
+    // const signer = new ethers.Wallet(PRIV_KEY)
     const signer = accounts[0]
     const to = accounts[1].address
     const amount = 999
