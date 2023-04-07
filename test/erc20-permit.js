@@ -58,7 +58,7 @@ describe("ERC20Permit", function () {
     const signer = accounts[0]
 
     const Token = await ethers.getContractFactory("Token")
-    const token = await Token.deploy()
+    const token = await Token.deploy("token name","token")
     await token.deployed()
 
     const Vault = await ethers.getContractFactory("Vault")
